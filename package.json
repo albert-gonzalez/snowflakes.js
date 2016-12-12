@@ -1,0 +1,25 @@
+{
+  "name": "snowflakesjs",
+  "version": "0.1.0",
+  "description": "Customizable snowflakes for your site. Ho! Ho! Ho!",
+  "main": "src/js/snowflakes.js",
+  "author": "Albert Gonzalez (albert.glez.mld@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
