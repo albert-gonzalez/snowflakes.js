@@ -57,6 +57,7 @@ var snowflakes =
 	var ADD_SNOWFLAKE_FREQ = 800;
 	var MOVE_SNOWFLAKE_FREQ = 50;
 	var REMOVE_SNOWFLAKE_FREQ = 1000;
+	var Z_INDEX = 10;
 
 	var snowflakes = [];
 	var snowflakeAdder = void 0;
@@ -67,18 +68,19 @@ var snowflakes =
 
 	function initOptions(options) {
 	    return Object.assign({
-	        background: 'rgba(150,150,200,0.5)',
+	        background: 'rgba(150,150,200,0.8)',
 	        borderRadius: '10px',
 	        width: '5px',
 	        height: '5px',
-	        boxShadow: '1px 1px .5px rgba(0,0,0,0.5)',
+	        boxShadow: '1px 1px .5px rgba(0,0,0,0.8)',
 	        addSnowflakeFrequency: ADD_SNOWFLAKE_FREQ,
 	        moveSnowflakeFrequency: MOVE_SNOWFLAKE_FREQ,
 	        removeSnowFlakeFrequency: REMOVE_SNOWFLAKE_FREQ,
 	        horizontalSpeed: SNOWFLAKE_HORIZONTAL_SPEED,
 	        horizontalMovement: SNOWFLAKE_HORIZONTAL_MOVEMENT,
 	        verticalSpeed: SNOWFLAKE_VERTICAL_SPEED,
-	        maxSnowflakes: MAX_SNOWFLAKES
+	        maxSnowflakes: MAX_SNOWFLAKES,
+	        zIndex: Z_INDEX
 	    }, options);
 	}
 
@@ -105,6 +107,7 @@ var snowflakes =
 	    snowflake.style.boxShadow = options.boxShadow;
 	    snowflake.style.position = 'absolute';
 	    snowflake.style.top = '-' + options.height;
+	    snowflake.style.zIndex = options.zIndex;
 	}
 
 	function initRandomOptions(snowflake, options) {

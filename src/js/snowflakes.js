@@ -5,6 +5,7 @@ const SNOWFLAKE_VERTICAL_SPEED = 1;
 const ADD_SNOWFLAKE_FREQ = 800;
 const MOVE_SNOWFLAKE_FREQ = 50;
 const REMOVE_SNOWFLAKE_FREQ = 1000;
+const Z_INDEX = 10;
 
 let snowflakes = [];
 let snowflakeAdder;
@@ -15,18 +16,19 @@ let lastAddUpdate;
 
 function initOptions(options) {
     return Object.assign({
-        background: 'rgba(150,150,200,0.5)',
+        background: 'rgba(150,150,200,0.8)',
         borderRadius: '10px',
         width: '5px',
         height: '5px',
-        boxShadow: '1px 1px .5px rgba(0,0,0,0.5)',
+        boxShadow: '1px 1px .5px rgba(0,0,0,0.8)',
         addSnowflakeFrequency: ADD_SNOWFLAKE_FREQ,
         moveSnowflakeFrequency: MOVE_SNOWFLAKE_FREQ,
         removeSnowFlakeFrequency: REMOVE_SNOWFLAKE_FREQ,
         horizontalSpeed: SNOWFLAKE_HORIZONTAL_SPEED,
         horizontalMovement: SNOWFLAKE_HORIZONTAL_MOVEMENT,
         verticalSpeed: SNOWFLAKE_VERTICAL_SPEED,
-        maxSnowflakes: MAX_SNOWFLAKES
+        maxSnowflakes: MAX_SNOWFLAKES,
+        zIndex:Z_INDEX,
     }, options);
 }
 
@@ -53,6 +55,7 @@ function initCustomOptions(snowflake, options) {
     snowflake.style.boxShadow = options.boxShadow;
     snowflake.style.position = 'absolute';
     snowflake.style.top = '-' + options.height;
+    snowflake.style.zIndex = options.zIndex;
 }
 
 function initRandomOptions(snowflake, options) {
