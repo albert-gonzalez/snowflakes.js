@@ -15,7 +15,7 @@ npm install snowflakes
 ```html
 <script src="dist/snowflakes.min.js"></script>
 <script>
-    snowflakes.init();
+    snowflakes.init(/* { you can pass an options object here } */);
 </script>
 ```
 
@@ -23,14 +23,14 @@ npm install snowflakes
 
 ```js
 import { init } from "snowflakes";
-init();
+init(/* { you can pass an options object here } */);
 ```
 
 or 
 
 ```js
 import snowflakes from "snowflakes";
-snowflakes.init();
+snowflakes.init(/* { you can pass an options object here } */);
 ```
 
 ### CommonJS require
