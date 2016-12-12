@@ -50,25 +50,25 @@
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/snowflakes.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 <span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
-<span class="pl-s1">    <span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</span>
+<span class="pl-s1">    <span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>(<span class="pl-c">/* { you can pass an options object here } */</span>);</span>
 <span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
 
 <h3>
 <a id="es6-import" class="anchor" href="#es6-import" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ES6 Import</h3>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> { <span class="pl-smi">init</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">"</span>snowflakes<span class="pl-pds">"</span></span>;
-<span class="pl-en">init</span>();</pre></div>
+<span class="pl-en">init</span>(<span class="pl-c">/* { you can pass an options object here } */</span>);</pre></div>
 
 <p>or </p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> <span class="pl-smi">snowflakes</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">"</span>snowflakes<span class="pl-pds">"</span></span>;
-<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</pre></div>
+<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>(<span class="pl-c">/* { you can pass an options object here } */</span>);</pre></div>
 
 <h3>
 <a id="commonjs-require" class="anchor" href="#commonjs-require" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CommonJS require</h3>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> snowflakes <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>snowflakes<span class="pl-pds">'</span></span>);
-<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</pre></div>
+<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>(<span class="pl-c">/* { you can pass an options object here } */</span>);</pre></div>
 
 <h2>
 <a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
