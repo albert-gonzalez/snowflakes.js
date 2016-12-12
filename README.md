@@ -37,7 +37,7 @@ snowflakes.init(/* { you can pass an options object here } */);
 
 ```js
 let snowflakes = require('snowflakes');
-snowflakes.init();
+snowflakes.init(/* { you can pass an options object here } */);
 ```
 
 ## Options
