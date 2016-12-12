@@ -2,6 +2,12 @@
 
 Customizable snowflakes for your site, HO! HO! HO!
 
+## Install
+
+```
+npm install snowflakes
+```
+
 ## Usage
 
 ### JS Script
