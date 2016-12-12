@@ -131,21 +131,22 @@ function removeSnowflakes() {
 
     snowflakes = activeSnowflakes;
 }
+let init = function (options) {
+    options = initOptions(options);
 
-export let init = function (options) {
-        options = initOptions(options);
+    if (snowflakeAdder) {
+        clearInterval(snowflakeAdder);
+        clearInterval(snowflakeMover);
+        clearInterval(snowflakeRemover);
+    }
 
-        if (snowflakeAdder) {
-            clearInterval(snowflakeAdder);
-            clearInterval(snowflakeMover);
-            clearInterval(snowflakeRemover);
-        }
-
-        snowflakeAdder = setInterval(() => addSnowflake(options), options.addSnowflakeFrequency);
-        snowflakeMover = setInterval(() => moveSnowflakes(options), options.moveSnowflakeFrequency);
-        snowflakeRemover = setInterval(() => removeSnowflakes(options), options.removeSnowFlakeFrequency);
+    snowflakeAdder = setInterval(() => addSnowflake(options), options.addSnowflakeFrequency);
+    snowflakeMover = setInterval(() => moveSnowflakes(options), options.moveSnowflakeFrequency);
+    snowflakeRemover = setInterval(() => removeSnowflakes(options), options.removeSnowFlakeFrequency);
 };
 
-export default {
+exports.init = init;
+
+exports.default = {
     init: init
-}
+};

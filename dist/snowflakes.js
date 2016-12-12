@@ -47,9 +47,6 @@ var snowflakes =
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
 	var MAX_SNOWFLAKES = 200;
 	var SNOWFLAKE_HORIZONTAL_MOVEMENT = 10;
 	var SNOWFLAKE_HORIZONTAL_SPEED = 1;
@@ -225,8 +222,7 @@ var snowflakes =
 
 	    snowflakes = activeSnowflakes;
 	}
-
-	var init = exports.init = function init(options) {
+	var init = function init(options) {
 	    options = initOptions(options);
 
 	    if (snowflakeAdder) {
@@ -245,6 +241,8 @@ var snowflakes =
 	        return removeSnowflakes(options);
 	    }, options.removeSnowFlakeFrequency);
 	};
+
+	exports.init = init;
 
 	exports.default = {
 	    init: init
