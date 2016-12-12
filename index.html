@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Snowflakes.js : Customizable snowflakes for your site. Ho! Ho! Ho!">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Snowflakes.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/albert-gonzalez/snowflakes.js">View on GitHub</a>
+
+          <h1 id="project_title">Snowflakes.js</h1>
+          <h2 id="project_tagline">Customizable snowflakes for your site. Ho! Ho! Ho!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/albert-gonzalez/snowflakes.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/albert-gonzalez/snowflakes.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="snowflakesjs" class="anchor" href="#snowflakesjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Snowflakes.js</h1>
+
+<p>Customizable snowflakes for your site, HO! HO! HO!</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="js-script" class="anchor" href="#js-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JS Script</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/snowflakes.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+<span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    <span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h3>
+<a id="es6-import" class="anchor" href="#es6-import" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ES6 Import</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> { <span class="pl-smi">init</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">"</span>snowflakes<span class="pl-pds">"</span></span>;
+<span class="pl-en">init</span>();</pre></div>
+
+<p>or </p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> <span class="pl-smi">snowflakes</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">"</span>snowflakes<span class="pl-pds">"</span></span>;
+<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</pre></div>
+
+<h3>
+<a id="commonjs-require" class="anchor" href="#commonjs-require" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CommonJS require</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> snowflakes <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>snowflakes<span class="pl-pds">'</span></span>);
+<span class="pl-smi">snowflakes</span>.<span class="pl-en">init</span>();</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
+
+<ul>
+<li>background: Snowflakes background. It can be any CSS background property. Default value: 'rgba(150,150,200,0.5)'</li>
+<li>borderRadius: Border radius for round corners. Default value: '10px'</li>
+<li>width: CSS Property. Default value: '5px'</li>
+<li>height: CSS Property. Default value: '5px'</li>
+<li>boxShadow: Shadow for the snowflakes. CSS Property: Default value: '1px 1px .5px rgba(0,0,0,0.5)'</li>
+<li>addSnowflakeFrequency: Frequency in milliseconds for adding new snowflakes. Default value: 800</li>
+<li>moveSnowflakeFrequency: Frequency in milliseconds for moving the snowflakes. Default value: 50</li>
+<li>removeSnowFlakeFrequency: Frequency in milliseconds for removing the snowflakes that are out of the screen. Default value: 1000</li>
+<li>horizontalSpeed: Speed for the horizontal movement in pixels: Default value: 1</li>
+<li>horizontalMovement: Max offset in pixels for the horizontal movement. Default value: 10</li>
+<li>verticalSpeed: Speed for the vertical. Default value: 1</li>
+<li>maxSnowflakes. Max count of snowflakes in the screen. Default value: 200</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Snowflakes.js maintained by <a href="https://github.com/albert-gonzalez">albert-gonzalez</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
