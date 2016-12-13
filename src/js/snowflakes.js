@@ -53,9 +53,9 @@ function initCustomOptions(snowflake, options) {
     snowflake.style.width = options.width;
     snowflake.style.height = options.height;
     snowflake.style.boxShadow = options.boxShadow;
-    snowflake.style.position = 'absolute';
-    snowflake.style.top = '-' + options.height;
     snowflake.style.zIndex = options.zIndex;
+    snowflake.style.top = '-' + options.height;
+    snowflake.style.position = 'fixed';
 }
 
 function initRandomOptions(snowflake, options) {

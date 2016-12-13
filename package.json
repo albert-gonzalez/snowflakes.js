@@ -1,6 +1,6 @@
 {
   "name": "snowflakes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Customizable snowflakes for your site. Ho! Ho! Ho!",
   "main": "src/js/snowflakes.js",
   "author": "Albert Gonzalez (albert.glez.mld@gmail.com)",
