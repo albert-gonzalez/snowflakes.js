@@ -1,5 +1,7 @@
 # Snowflakes.js
 
+[![NPM](https://nodei.co/npm/snowflakes.png)](https://nodei.co/npm/snowflakes/)
+
 Customizable snowflakes for your site, HO! HO! HO!
 
 ## Install
