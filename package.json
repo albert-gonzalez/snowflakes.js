@@ -1,7 +1,8 @@
 {
   "name": "snowflakes",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Customizable snowflakes for your site. Ho! Ho! Ho!",
+  "keywords": ["snowflakes", "christmas", "xmas", "snow"],
   "main": "src/js/snowflakes.js",
   "homepage": "https://albert-gonzalez.github.io/snowflakes.js/",
   "repository": "albert-gonzalez/snowflakes.js",
